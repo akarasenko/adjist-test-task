@@ -23,3 +23,5 @@ ApplicationManager class and ApiRequest class contain methods to interact with A
 Model classes for data and REST responses is also used.
 local.properties is used to set test parameters e.g. request url
 
+As API seems not to be completed it's hard to create more complicated tests e.g. first create a user, get its id in response then get a user by id and verify user data.
+The problem in the scenario is that after creating new user you can't get it with GET single user method by its id (the method returns nothing [])
