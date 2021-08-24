@@ -1,0 +1,8 @@
+<suite name="AllTests" verbose="1" >
+    <test name="AllTests"   >
+        <packages>
+            <package name="test.java.tests" />
+        </packages>
+    </test>
+</suite>
+

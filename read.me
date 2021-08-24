@@ -1,0 +1,25 @@
+INFO
+The project contains 3 API autotests SINGLE USER, CREATE, DELETE methods on https://reqres.in/
+
+SETUP
+There is no special setup for running tests required.
+
+There are a way to run tests via IntelliJ IDEA:
+1. Download and install IntelliJ IDE https://www.jetbrains.com/ru-ru/idea/
+2. Open project IntelliJ IDEA
+3. Open build.gradle and load (reload) gradle project
+4. Open file with test e.g. java/tests/GetSingleUserTest.java
+5. Run test by clicking on green play button near test
+6. Run results are shown in Test Explorer
+
+Test can be also run in terminal:
+run the command 'java %/org.testng.TestNG testng.xml' where %. is your path to org.testng.TestNG file
+
+STRUCTURE DESCRIPTION
+Tests are developed with Java / TestNG / REST Assured.
+Test features can be fount at src/test/java/tests/ package. All test classes inherit BaseTest class.
+Page object pattern is used.
+ApplicationManager class and ApiRequest class contain methods to interact with API on https://reqres.in/.
+Model classes for data and REST responses is also used.
+local.properties is used to set test parameters e.g. request url
+
